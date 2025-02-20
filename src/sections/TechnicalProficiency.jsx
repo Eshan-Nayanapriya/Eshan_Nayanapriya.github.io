@@ -38,7 +38,7 @@ const TechnicalProficiency = () => {
           activeTab={activeTab}
           onChange={handleTabChange}
         />
-        <div className='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-4 min-h-[180px]'>
+        <div className='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-4 min-h-[150px]'>
           {tabData.map((skill, index) => (
             <motion.div key={skill.id}
             initial={{ opacity: 0, y: 20 }}

@@ -1,27 +1,33 @@
 /* eslint-disable react/prop-types */
-import React from "react";
+import React, { act } from "react";
+import { motion } from "framer-motion";
 
 const Tabs = ({ tablist, activeTab, onChange }) => {
-
-    const getActiveStyles = (value) => {
-        return activeTab === value
-            ? "text-white bg-gradient-primary"
-            : "text-secondary bg-transparent";
-    };
+  const getActiveStyles = (value) => {
+    return activeTab === value
+      ? "text-white bg-gradient-primary"
+      : "text-secondary bg-transparent";
+  };
 
   return (
     <div className="flex items-center justify-center my-10">
       <div className="bg-[#d7e7ff] rounded-full flex">
         {tablist.map((tab) => (
-          <button
+          <motion.button
             key={tab.id}
+            initial={{ opacity: 0.8, scale: 1 }}
+            animate={{
+              opacity: activeTab === tab.value ? 1 : 0.8,
+              scale: activeTab === tab.value ? 1.1 : 1,
+            }}
+            transition={{ duration: 0.2 }}
             className={`text-xs md:text-[15px] ${getActiveStyles(
               tab.value
             )} rounded-full px-4 md:px-10 py-[6px] md:py-3`}
             onClick={() => onChange(tab.value)}
           >
             {tab.label}
-          </button>
+          </motion.button>
         ))}
       </div>
     </div>
