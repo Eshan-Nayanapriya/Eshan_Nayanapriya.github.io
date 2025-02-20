@@ -8,14 +8,14 @@ export default {
     extend: {
       //colors used in the project
       colors: {
-        primary: "#F6A64F",
-        secondary: "#b56141",
-        background: "#FFFCF8",
+        primary: "#00ace6",
+        secondary: "#0066ff",
+        background: "#e6f9ff",
         white: "#FBFBFB",
       },
 
       backgroundImage: {
-        'gradient-primary': 'linear-gradient(to right, #f4a44f, #ac573f)',
+        'gradient-primary': 'linear-gradient(to right, #00bfff, #000080)',
       }
     },
   },

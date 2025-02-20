@@ -37,4 +37,13 @@
   .btn-scale-anim{
     @apply transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg;
   }
+
+  .profile-pic{
+    @apply w-[300px] md:w-[330px] h-[350px] md:h-[428px] rotate-[5.75px] transition-transform duration-300 ease-in-out
+    hover:scale-105 hover:rotate-[-3deg];
+  }
+
+  .icon-img{
+    @apply w-12 md:w-16 h-12 md:h-16 absolute transition-transform duration-300 ease-in-out hover:scale-110 hover:rotate-0;
+  }
 }

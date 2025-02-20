@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { MENU_LINKS } from "../utils/data";
 import { Link } from "react-scroll";
-//import LOGO from '../assets/images/LOGO.png';
+import LOGO from '../assets/images/logo.png';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(true);
@@ -33,9 +33,9 @@ const Navbar = () => {
 
   return (
     <nav className="container mx-auto sticky top-5 z-10">
-      <div className="flex items-center justify-between rounded-full bg-white/25 border-2 border-[#fee6cc] backfrop-blur-[10px] m-5 p-3 md:p-0">
+      <div className="flex items-center justify-between rounded-full bg-white/25 border-2 border-[#00bfff] backfrop-blur-[10px] m-5 p-3 md:p-0">
         {/*Logo*/}
-        <img src="" alt="Logo" className="h-7 ml-6 -mb-1" />
+        <img src={LOGO} alt="Logo" className="h-7 ml-6 -mb-1" />
 
         {/*Hamburger Menu (visible in smaller screens)*/}
         <button
