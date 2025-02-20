@@ -15,6 +15,8 @@ import { SiExpress, SiMongodb, SiMysql, SiWebpack } from 'react-icons/si';
 import { VscVscode, VscCommentUnresolved, VscTerminalPowershell } from 'react-icons/vsc';
 import { FaGitAlt,FaXTwitter, FaDribbble } from 'react-icons/fa6';
 import { MdGroups3 } from 'react-icons/md';
+import IMG_1 from '../assets/images/icon_6.png';
+
 
 //project image imports
 //import IMG_1 from '../assets/images/IMG_1.jpg';
@@ -75,42 +77,42 @@ export const PROJECTS = [
     {
         id: 1,
         title: "Project 1",
-        //image: IMG_1,
+        image: IMG_1,
         tags: ["React", "Node.js", "Express", "MongoDB"],
         description: "This is a project description. This is a project description. This is a project description. This is a project description.",
     },
     {
         id: 2,
         title: "Project 2",
-        //image: IMG_1,
+        image: IMG_1,
         tags: ["React", "Node.js", "Express", "MongoDB"],
         description: "This is a project description. This is a project description. This is a project description. This is a project description.",
     },
     {
         id: 3,
         title: "Project 3",
-        //image: IMG_1,
+        image: IMG_1,
         tags: ["React", "Node.js", "Express", "MongoDB"],
         description: "This is a project description. This is a project description. This is a project description. This is a project description.",
     },
     {
         id: 4,
         title: "Project 4",
-        //image: IMG_1,
+        image: IMG_1,
         tags: ["React", "Node.js", "Express", "MongoDB"],
         description: "This is a project description. This is a project description. This is a project description. This is a project description.",
     },
     {
         id: 5,
         title: "Project 5",
-        //image: IMG_1,
+        image: IMG_1,
         tags: ["React", "Node.js", "Express", "MongoDB"],
         description: "This is a project description. This is a project description. This is a project description. This is a project description.",
     },
     {
         id: 6,
         title: "Project 6",
-        //image: IMG_1,
+        image: IMG_1,
         tags: ["React", "Node.js", "Express", "MongoDB"],
         description: "This is a project description. This is a project description. This is a project description. This is a project description.",
     }
