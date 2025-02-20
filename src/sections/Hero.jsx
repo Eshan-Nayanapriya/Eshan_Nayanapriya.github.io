@@ -4,6 +4,10 @@ import ICON1 from "../assets/images/icon_1.png";
 import ICON2 from "../assets/images/icon_2.png";
 import ICON3 from "../assets/images/icon_3.png";
 import ICON4 from "../assets/images/icon_4.png";
+import ICON5 from "../assets/images/icon_5.png";
+import ICON6 from "../assets/images/icon_6.png";
+import StatInfoCard from "../components/StatInfoCard";
+import { STATS } from "../utils/data";
 
 const Hero = () => {
   return (
@@ -32,30 +36,41 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="w-[300px] md:w-[370px] h-[350px] md:h-[420px] bg-blue-100/50 rounded-3xl relative order-1 lg:order-2">
+        <div className="w-[300px] md:w-[370px] h-[350px] md:h-[420px] bg-blue-300/50 rounded-3xl relative order-1 lg:order-2">
           <img src={profilepicture} alt="Profile Pic" className="profile-pic" />
 
           <img
-            src={ICON2}
+            src={ICON6}
             alt="ICON1"
-            className="icon-img -left-10 bottom-20 rotate-[1.75deg]"
-          />
-          <img
-            src={ICON1}
-            alt="ICON2"
-            className="icon-img left-5 md:left-10 -bottom-6 rotate-[2.75deg]"
+            className="icon-img -left-10 bottom-36 rotate-[1.75deg]"
           />
           <img
             src={ICON3}
-            alt="ICON3"
-            className="icon-img left-[110px] md:left-[150px] -bottom-12 rotate-[3.75deg]"
+            alt="ICON1"
+            className="icon-img -left-10 bottom-10 rotate-[1.75deg]"
+          />
+          <img
+            src={ICON2}
+            alt="ICON2"
+            className="icon-img left-5 md:left-10 -bottom-6 rotate-[1.75deg]"
           />
           <img
             src={ICON4}
+            alt="ICON3"
+            className="icon-img left-[110px] md:left-[150px] -bottom-12 rotate-[1.75deg]"
+          />
+          <img
+            src={ICON1}
             alt="ICON4"
             className="icon-img left-[200px] md:left-[275px] -bottom-9 md:-bottom-10 rotate-[4.75deg]"
           />
         </div>
+      </div>
+
+      <div className="flex gap-12 mt-16 md:mt-24 flex-wrap">
+        {STATS.map((item) => (
+          <StatInfoCard key={item.id} count={item.count} label={item.label} />
+        ))}
       </div>
     </section>
   );
