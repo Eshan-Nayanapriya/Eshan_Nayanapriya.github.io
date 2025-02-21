@@ -48,7 +48,7 @@
   }
 
   .section-title{
-    @apply text-[26px] font-semibold text-left text-center bg-gradient-primary bg-clip-text text-transparent;
+    @apply text-[26px] font-semibold text-center bg-gradient-primary bg-clip-text text-transparent;
   }
 
   .arrow-btn{
