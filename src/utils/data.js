@@ -10,7 +10,7 @@ import {
     FaGithub,
     FaInstagram,
 } from 'react-icons/fa';
-import { BiLogoJavascript, BiLogoReact } from 'react-icons/bi';
+import { BiLogoJavascript, BiLogoReact, BiLogoFlutter, BiLogoSpringBoot  } from 'react-icons/bi';
 import { SiExpress, SiMongodb, SiMysql } from 'react-icons/si';
 import { VscVscode } from 'react-icons/vsc';
 import { FaGitAlt } from 'react-icons/fa6';
@@ -57,6 +57,8 @@ export const SKILLS = [
     {id: "11", icon: VscVscode, skill: "VS Code", progress: "90", type: "tools"},
     {id: "12", icon: FaGitAlt , skill: "Git", progress: "85", type: "tools"},
     {id: "13", icon: FaPython , skill: "Python", progress: "85", type: ""},
+    {id: "14", icon: BiLogoFlutter , skill: "Flutter", progress: "85", type: "frontend"},
+    {id: "15", icon: BiLogoSpringBoot , skill: "Spring Boot", progress: "85", type: "backend"},
 ];
 
 export const ABOUT_ME = {
