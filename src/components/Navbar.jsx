@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { MENU_LINKS } from "../utils/data";
 import { Link } from "react-scroll";
-import LOGO from '../assets/images/logo.png';
+import LOGO from "../assets/images/logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(true);
@@ -90,12 +90,14 @@ const Navbar = () => {
         </ul>
 
         {/*Hire Me Button*/}
-        <button
-          className="hidden md:block h-12 text-[15px] font-medium text-white bg-gradient-primary
+        <Link to="contact" smooth spy offset={-80} className="hidden md:block">
+          <button
+            className="hidden md:block h-12 text-[15px] font-medium text-white bg-gradient-primary
                           rounded-full px-9 transition-transform duration-300 ease-in-out hover:scale-105"
-        >
-          Hire Me
-        </button>
+          >
+            Hire Me
+          </button>
+        </Link>
       </div>
     </nav>
   );

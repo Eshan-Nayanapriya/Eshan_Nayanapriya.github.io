@@ -1,20 +1,19 @@
 import {
-    FaReact,
     FaNodeJs,
     FaHtml5,
     FaCss3,
-    FaJs,
-    FaSass,
+    FaJava,
+    FaPhp,
+    FaPython,
     FaFacebook,
     FaLinkedin,
     FaGithub,
     FaInstagram,
 } from 'react-icons/fa';
 import { BiLogoJavascript, BiLogoReact } from 'react-icons/bi';
-import { SiExpress, SiMongodb, SiMysql, SiWebpack } from 'react-icons/si';
-import { VscVscode, VscCommentUnresolved, VscTerminalPowershell } from 'react-icons/vsc';
-import { FaGitAlt,FaXTwitter, FaDribbble } from 'react-icons/fa6';
-import { MdGroups3 } from 'react-icons/md';
+import { SiExpress, SiMongodb, SiMysql } from 'react-icons/si';
+import { VscVscode } from 'react-icons/vsc';
+import { FaGitAlt } from 'react-icons/fa6';
 import IMG_1 from '../assets/images/icon_6.png';
 
 
@@ -26,13 +25,13 @@ export const MENU_LINKS = [
     { id: "02", label: "Skills", offset:-80, to:"skills" },
     { id: "03", label: "About Me", offset:-80, to:"about" },
     { id: "04", label: "Projects", offset:-80, to:"projects" },
-    { id: "05", label: "Contact", offset:-80, to:"contact" },
+    { id: "05", label: "Contact Me", offset:-80, to:"contact" },
 ];
 
 export const STATS = [
     {id: "01", count: "2", label: `Years of \nExperience`},
-    {id: "02", count: "10+", label: `Projects \nCompleted`},
-    {id: "03", count: "5", label: `Certifications \nEarned`},
+    {id: "02", count: "20+", label: `Projects \nCompleted`},
+    {id: "03", count: "10+", label: `Certifications \nEarned`},
     {id: "04", count: "5", label: `Happy \nClients`},
 ];
 
@@ -45,18 +44,19 @@ export const SKILL_TABS= [
 ];
 
 export const SKILLS = [
-    {id: "01", icon: BiLogoReact, skill: "React JS", progress: "95", type: "frontend"},
-    {id: "02", icon: BiLogoJavascript, skill: "Javascript", progress: "90", type: "frontend"},
+    {id: "01", icon: BiLogoReact, skill: "React Js", progress: "95", type: "frontend"},
+    {id: "02", icon: BiLogoJavascript, skill: "JavaScript", progress: "90", type: "frontend"},
     {id: "03", icon: FaHtml5, skill: "HTML", progress: "95", type: "frontend"},
     {id: "04", icon: FaCss3, skill: "CSS", progress: "90", type: "frontend"},
-    {id: "05", icon: FaSass, skill: "Sass", progress: "85", type: "frontend"},
-    {id: "06", icon: FaNodeJs, skill: "Node JS", progress: "80", type: "backend"},
-    {id: "07", icon: SiExpress, skill: "Express JS", progress: "80", type: "backend"},
+    {id: "05", icon: FaPhp , skill: "PHP", progress: "85", type: "backend"},
+    {id: "06", icon: FaNodeJs, skill: "Node Js", progress: "80", type: "backend"},
+    {id: "07", icon: SiExpress, skill: "Express Js", progress: "80", type: "backend"},
     {id: "08", icon: SiMongodb, skill: "MongoDB", progress: "75", type: "backend"},
     {id: "09", icon: SiMysql, skill: "MySQL", progress: "70", type: "backend"},
-    {id: "10", icon: SiWebpack, skill: "Webpack", progress: "85", type: "tools"},
+    {id: "10", icon: FaJava , skill: "Java", progress: "85", type: "backend"},
     {id: "11", icon: VscVscode, skill: "VS Code", progress: "90", type: "tools"},
     {id: "12", icon: FaGitAlt , skill: "Git", progress: "85", type: "tools"},
+    {id: "13", icon: FaPython , skill: "Python", progress: "85", type: ""},
 ];
 
 export const ABOUT_ME = {
